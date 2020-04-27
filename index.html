@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./img/pong.png">
+  </head>
+    <body>
+    <div id='completGame' style='display:none;' class='centerDiv'>
+      <p id="message"></p>
+      <button id="startGame" class="btneady buttonClass" disabled>Ready</button>
+      <p id="messageWaiting"></p>
+      <div id="divGame"></div>
+  </div>
+   <div id="menu">
+     <div class="menuItem">
+      
+    
+      <div class="centerDiv">
+        <button id="createGameIA" class="buttonClass" >One vs Computer</button><br>
+        <button id="createGame" class="buttonClass" >One vs One</button><br>
+        <button id="createGame2vs2" class="buttonClass" >Two vs Two</button>
+        
+        
+      </div>
+     </div>
+     <div id="joinAgame">
+      <div class="centerDiv">
+        <input id="RoomName" type="text" placeholder="ROOM ID">
+      </div>  
+      <div class="centerDiv">
+      <button id="joinGame" class="buttonClass" >Join game</button>
+    </div>
+    </div>
+    </div>
+    
+    </body>
+   <script src="js/game.js"></script>
+   <script src="js/game.display.js"></script>
+   <script src="js/game.control.js"></script>
+   <script src="js/game.keycode.js"></script>
+   <script src="js/game.ai.js"></script>
+   <script src="/socket.io/socket.io.js"></script>
+   <script src="./js/treatment.js"></script>
+  
+   </html>
